@@ -4,26 +4,37 @@
 
 Students get a review of the core concepts learned in the earlier lesson, puts, strings, math, and user input. Students get introduced to methods.
 
-## SWABTS
+## SWBAT
 
 + METHODS - Define a method in ruby.
 + METHODS - Call a method in ruby.
 
 ## Recap
 
-_Feel free to use [Ruby Recap and Methods Deck](https://docs.google.com/presentation/d/1zOL_KZKVK-jW8Gyh5L-XPgHw8XXkZytKWb7W4SqDKP0/edit#slide=id.g38c2de6ae8_0_122)
+Feel free to use [Ruby Recap and Methods Deck](https://docs.google.com/presentation/d/1zOL_KZKVK-jW8Gyh5L-XPgHw8XXkZytKWb7W4SqDKP0/edit#slide=id.g38c2de6ae8_0_122)
 
-### Programs are Just Files
 
-### Strings Review
 
-### Reading Errors Reviews
++ Programs are Just Files
+
++ Strings Review
+
++ Reading Errors Review
+
+#### CFU 
+
+Define puts and strings with an elbow partner. Share whole group.
+
+
+
 
 ## Methods
 
 In order to not repeat ourselves all the time, we can grab a sequence of commands and put them inside of a method. The method's name becomes a reference to all those commands and every time we call that method, the code inside of it will run.
 
 Have students open `irb` and play with some method definitions
+
+Display the following as an example:
 
 ```ruby
 def about_me
@@ -36,6 +47,8 @@ end
 
 Just defining a method does nothing, it only creates the method. When we want to run it, we have to call it by the name we gave it.
 
+Students can practice writing an about me on white boards along with instructors.
+
 ```ruby
 def about_me
   puts "My name is Karlie"
@@ -49,13 +62,9 @@ about_me
 #> I grew up in St. Louis
 #> I'm 25 Years Old
 #> My favorite food is Kookies
-
-about_me
-#> My Name is Karlie
-#> I grew up in St. Louis
-#> I'm 25 Years Old
-#> My favorite food is Kookies
 ```
+
+
 
 **Students should all build an `about_me` method.**
 
