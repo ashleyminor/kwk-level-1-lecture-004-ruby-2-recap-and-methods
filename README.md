@@ -63,20 +63,20 @@ about_me
 #> I'm 25 Years Old
 #> My favorite food is Kookies
 ```
+#### CFU
 
-
+Stop, Jot, Share: What is a method? How do I call a method?
 
 **Students should all build an `about_me` method.**
 
 **Students should work on [Dance Instructions Lab]<!-- (https://github.com/learn-co-curriculum/kwk-l1-dance-instructions) -->** 15 minutes
 
-**After the lab, give one more IRB demo to setup for tomorrow.**
 
-## Wrap Up
+## Loop Intro
 
 Okay, so we've learned about building programs, giving commands, strings, math, variables, and methods.
 
-Let's look at some issues with methods in irb. **Students can follow along**
+Let's look at tips and tricks of optimizing our methods in IRB. **Students can follow along**
 
 ```ruby
 def two_step
@@ -88,10 +88,15 @@ two_step
 two_step
 two_step
 ```
+#### CFU
 
-How would we tell the two_step to just keep on going, to never stop, just keep on repeating? _Do the dance, it never stops_ (We're leading toward loops).
+What do you expect this method to do? (Have students stand and physically run the method.)
 
-Then also, let's think about this example. **Students should follow along**
+How would we tell the two_step to just keep on going, to never stop, just keep on repeating? _Do the dance, it never stops_ (We're leading toward loops). When you hear the word loop, what comes to mind?
+
+## Variable Intro
+
+Let's take a look at this example. **Students should follow along**
 
 ```ruby
 def greeting
@@ -101,9 +106,12 @@ end
 greeting
 ```
 
-In that greeting, we have 3 or 4 things that could be replaced with variables. If we wanted our `greeting` method to be really flexible, we might think of the greeting string as really being
+What if I want to ask a differet friend a question? About a different time of day? 
+In that greeting, we have 3 or 4 things that could be replaced with variables. If we wanted our `greeting` method to be really flexible, we might think of the greeting string as really being:
 
 `local_greeting your_name, I'm my_name, how's your time_of_day?`
+
+**Ask students for a variety of greetings, names and times of day.**
 
 `local_greeting` might be "What's up", or "Hey", or "Yo", or "Konichiwa"
 
@@ -113,7 +121,7 @@ In that greeting, we have 3 or 4 things that could be replaced with variables. I
 
 `time_of_day` might be "morning" or "night" or "afternoon"
 
-We might be able to use variables for this, let's try it, in IRB, students following along.
+We might be able to use variables for this, let's try it, in IRB, students following along. Don't hit enter yet!
 
 ```ruby
 local_greeting = "Shalom"
@@ -129,9 +137,9 @@ def greeting
 end
 ```
 
-**DON'T HIT ENTER, Just have the setup. Ask the students what should happen? The variables are defined, the method is defined, as long as the method can read those variables, everything should be fine, right?**
+**What should happen? The variables are defined, the method is defined, as long as the method can read those variables, everything should be fine, right?**
 
-Now try it.
+Let's try it by hitting enter.
 
 ```ruby
 local_greeting = "Shalom"
