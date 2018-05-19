@@ -13,8 +13,6 @@ Students get a review of the core concepts learned in the earlier lesson, puts, 
 
 Feel free to use [Ruby Recap and Methods Deck](https://docs.google.com/presentation/d/1zOL_KZKVK-jW8Gyh5L-XPgHw8XXkZytKWb7W4SqDKP0/edit#slide=id.g38c2de6ae8_0_122)
 
-
-
 + Programs are Just Files
 
 + Strings Review
@@ -24,9 +22,6 @@ Feel free to use [Ruby Recap and Methods Deck](https://docs.google.com/presentat
 #### CFU 
 
 Define puts and strings with an elbow partner. Share whole group.
-
-
-
 
 ## Methods
 
@@ -47,7 +42,7 @@ end
 
 Just defining a method does nothing, it only creates the method. When we want to run it, we have to call it by the name we gave it.
 
-Students can practice writing an about me on white boards along with instructors.
+Students can write a practice `about_me` on white boards along with instructors. (Can replace Karlie and her information with your own.)
 
 ```ruby
 def about_me
@@ -63,20 +58,22 @@ about_me
 #> I'm 25 Years Old
 #> My favorite food is Kookies
 ```
+#### CFU
 
-
+Stop & Jot: What is a method? How do I call a method?
 
 **Students should all build an `about_me` method.**
 
-**Students should work on [Dance Instructions Lab]<!-- (https://github.com/learn-co-curriculum/kwk-l1-dance-instructions) -->** 15 minutes
+Share: Take a second to learn all about your neighbor from the output on their screen.
 
-**After the lab, give one more IRB demo to setup for tomorrow.**
+**Students should work on [Dance Instructions Lab]<!-- (https://github.com/learn-co-curriculum/kwk-l1-dance-instructions) -->** 15 minutes 
+(Objective: SWBAT use def to create a method that prints the steps for a dance of their choosing.)
 
-## Wrap Up
+## Loop Intro
 
-Okay, so we've learned about building programs, giving commands, strings, math, variables, and methods.
+We've learned about building programs, giving commands, strings, math, variables, and methods.
 
-Let's look at some issues with methods in irb. **Students can follow along**
+Let's look at tips and tricks of optimizing our methods in IRB. **Students can follow along.**
 
 ```ruby
 def two_step
@@ -88,10 +85,15 @@ two_step
 two_step
 two_step
 ```
+#### CFU
 
-How would we tell the two_step to just keep on going, to never stop, just keep on repeating? _Do the dance, it never stops_ (We're leading toward loops).
+What do you expect this method to do? (Have students stand and physically run the method.)
 
-Then also, let's think about this example. **Students should follow along**
+How would we tell the two_step to just keep on going, to never stop, just keep on repeating? _Do the dance, it never stops_ (We're leading toward loops). When you hear the word loop, what comes to mind?
+
+## Variable Intro
+
+Let's take a look at this example. **Students should follow along.**
 
 ```ruby
 def greeting
@@ -101,46 +103,49 @@ end
 greeting
 ```
 
-In that greeting, we have 3 or 4 things that could be replaced with variables. If we wanted our `greeting` method to be really flexible, we might think of the greeting string as really being
+What if I want to ask a different friend a question? How about a different time of day? 
+In that greeting, we have 3 or 4 things that could be replaced with variables. If we wanted our `greeting` method to be really flexible, we might think of the greeting string as really being:
 
 `local_greeting your_name, I'm my_name, how's your time_of_day?`
 
+**Ask students for a variety of greetings, names and times of day.**
+
 `local_greeting` might be "What's up", or "Hey", or "Yo", or "Konichiwa"
 
-`your_name` might be "Alice" or "Shirley"
+`your_name` might be "Ashley" or "Shannon"
 
-`my_name` might be "Grace" or "Katherine"
+`my_name` might be "Sara Beth" or "Chen"
 
 `time_of_day` might be "morning" or "night" or "afternoon"
 
-We might be able to use variables for this, let's try it, in IRB, students following along.
+We might be able to use variables for this, let's try it, in IRB, students following along. Don't hit enter yet!
 
 ```ruby
-local_greeting = "Shalom"
-your_name = "Golda"
-my_name = "Lea"
-time_of_day = "life"
+local_greeting = "Howdy"
+your_name = "Archie"
+my_name = "Veronica"
+time_of_day = "evening"
 
 # The goal being to get a greeting of:
-#> "Shalom Golda, I'm Lea, how's your life?"
+#> "Howdy Archie, I'm Veronica, how's your evening?"
 
 def greeting
   puts "#{local_greeting} #{your_name}, I'm #{my_name}, how's your #{time_of_day}?"
 end
 ```
 
-**DON'T HIT ENTER, Just have the setup. Ask the students what should happen? The variables are defined, the method is defined, as long as the method can read those variables, everything should be fine, right?**
+**What should happen? The variables are defined, the method is defined, as long as the method can read those variables, everything should be fine, right?**
 
-Now try it.
+Let's try it by hitting enter.
 
 ```ruby
-local_greeting = "Shalom"
-your_name = "Golda"
-my_name = "Lea"
-time_of_day = "life"
+local_greeting = "Howdy"
+your_name = "Archie"
+my_name = "Veronica"
+time_of_day = "evening"
 
 # The goal being to get a greeting of:
-#> "Shalom Golda, I'm Lea, how's your life?"
+#> "Howdy Archie, I'm Veronica, how's your evening?"
 
 def greeting
   puts "#{local_greeting} #{your_name}, I'm #{my_name}, how's your #{time_of_day}?"
